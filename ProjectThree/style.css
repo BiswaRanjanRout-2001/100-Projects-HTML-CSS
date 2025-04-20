@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+html,
+body {
+  color: #f2f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #2b2fda, #4a60f6);
+}
+
+
+
+.main-container {
+  background: linear-gradient(135deg, #2d3de4, #4b5bf0);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  width: 550px;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: -12px 12px 20px #051f53bd;
+}
+
+.main-container:hover{
+    box-shadow: -15px 15px 15px #051f53bd;
+}
+
+.main-container h1 {
+  font-size: 3.5rem;
+  text-shadow: -10px 8px 10px rgb(53, 0, 128);
+}
+
+.main-container p {
+  font-size: 1.6rem;
+  position: relative;
+  top: -35px;
+}
+
+#paraOne {
+  padding-left: 10px;
+}
+
+.footer {
+  background-color: #feffff;
+  height: 70px;
+  width: 430px;
+  border-radius: 25px;
+  box-shadow: 0 12px 20px #051f53aa;
+  font-size: 1.5rem;
+}
+
+.input-section input::placeholder {
+  color: #414141;
+  font-size: 1.5rem;
+}
+
+.input-section input{
+  padding-left: 20px;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #f8575e, #f8703f);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  width: 450px;
+  height: 70px;
+}
+
+#btn:hover{
+    animation: buttonProp 1s linear 0s forwards;
+    background: linear-gradient(135deg, #292626, #150e0c);
+
+}
+
+
+
+@keyframes buttonProp {
+    from {
+      transform: translateY(0);
+      box-shadow: 0 12px 20px #051f53bd;
+    }
+    to {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px black;
+    }
+  }
+  
+
+  @media (max-width: 600px) {
+    .main-container {
+      height: 80%;
+      width: 90%;
+      text-align: center;
+      font-size: 0.5rem;
+      padding: 20px 50px;
+    }
+
+    .main-container h1 {
+      font-size: 2.5rem;
+    }
+
+    .main-container p {
+      font-size: 1.2rem;
+      position: relative;
+      top: -40px;
+    }
+
+    .input-section,.button-section {
+      width: 85%;
+    }
+
+    .footer{
+      height: 45px;
+      width: 120%;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      margin-left: -40px;
+      
+    }
+
+
+    #btn{
+      width: 130%;
+      height: 45px;
+    }
+   
+
+
+  }
+  
