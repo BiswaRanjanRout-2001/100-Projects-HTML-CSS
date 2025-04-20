@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+label #menu-ico {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+.sidebar-menu {
+  position: fixed;
+  background-color: red;
+  top: 0;
+  right: -400px;
+  height: 35vh;
+  width: 333px;
+  box-shadow: 0 0 6px rgba(96, 90, 90, 0.6);
+  transition: all 0.3s linear;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  display: none;
+}
+
+.sidebar-menu ul li {
+  list-style: none;
+  /* box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); */
+  margin-top: 10px;
+  font-size: 2rem;
+  width: 2rem;
+}
+
+nav a {
+  margin-left: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdf6c;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 5%;
+  min-height: 90vh;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hero-text button {
+  padding: 0.8rem 2rem;
+  color: #6e8efb;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #ffdf6c;
+}
+
+.hero-img img {
+  max-width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  label #menu-ico {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+  }
+
+  #menu-icon:checked ~ .sidebar-menu {
+    display: block;
+    right: 0;
+    z-index: -100;
+  }
+
+  .hero-text,
+  .hero-img {
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  nav a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-top: 20px;
+  }
+}
