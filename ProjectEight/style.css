@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #3d1f1f, #1e1e1e);
+}
+
+/* Header Section */
+
+.header {
+  background-color: #1a0e0e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: sticky;
+  z-index: 1;
+  opacity: 1;
+  top: 0;
+}
+
+.logo {
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 6rem 2.5rem;
+}
+
+.hero-text {
+  color: #fff;
+ padding-top: 11rem;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-text p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-text h1, p, button{
+    margin-top: 1rem;
+}
+
+.hero-text button{
+    border-radius: 1024px;
+    padding: 1rem 1.5rem;
+    background-color: #ffd700;
+    border: none;
+}
+
+.hero-section .hero-img,
+.hero-section .hero-img img {
+  width: 480px;
+  border-radius: 30px;
+}
+
+.our-menu-section{
+    height: 70vh;
+    background-color: #2e1c1c;
+    backdrop-filter: blur(10px);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.menu-logo{
+    display: flex;
+    justify-content: center;
+}
+.menu-logo span{
+    background-color: #170e0ea7;
+    color: #ffd700;
+    font-size: 3rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: #170e0ea7;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+
+.menu-items{
+    background-color: #2e1c1c;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding:  1rem 1.5rem;
+}
+
+.menu-items h3{
+    color: #fff;
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1.5rem;
+}
+
+.menu-items p{
+    color: #9b8f8f;
+    padding:0  2rem 2rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.gallery-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    padding: 3.5rem 2rem;
+}
+
+.gallery-logo{
+    margin-bottom: 1rem;
+}
+
+.gallery-logo span{
+    color: #ffd700;
+    font-size: 2.5rem;
+} 
+
+.gallery-imgsection{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.gallery-images{
+    width: 400px;
+}
+
+.gallery-images img{
+    width:100%;
+    border-radius: 15px;
+}
+
+.about-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2.5rem;
+    background-color: #2e1c1c;
+}
+
+.about-logo h3{
+    color: #ffd700;
+    font-size: 2.5rem;
+}
+
+.about-logo h3 span{
+    background-color: #170e0ea7;
+    border-radius: 10px;
+}
+
+.about-text{
+    background-color: #170e0ea7;
+    color: #fff;
+    margin-top: 1rem;
+    padding:0 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.contact-section{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2.5rem;
+    background-color: #2e1c1c;
+}
+
+.contact-logo h3{
+    color: #ffd700;
+    font-size: 2.5rem;
+}
+
+.contact-logo h3 span{
+    background-color: #170e0ea7;
+    border-radius: 10px;
+}
+
+.contact-text{
+    background-color: #170e0ea7;
+    color: #fff;
+    margin-top: 1rem;
+    padding:0 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.contact-text p{
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+
+.footer{
+    background-color: #1a0e0e;
+    color: #414141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+} 
+
+.footer p:hover{
+    color: #ffd700;
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #414141;
+    cursor: pointer;
+    transition: color 2px ease-in 0;
+}
+
+.footer ul li a:hover{
+    color: #ffd700;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        margin-top: -15rem;
+    }
+
+    .hero-img img{
+        width: 100%;
+    }
+
+    .hero-section .hero-img{
+        width: 100%;
+    }
+
+    .our-menu-section{
+        margin-top: 8rem;
+        height: 100%;
+    }
+    .our-menu-section .menu-list{
+       
+      flex-direction: column;
+      flex-wrap: wrap;
+      width:100%;
+    
+    }
+
+    .gallery-section{
+        height: 100%;
+
+    }
+    .gallery-imgsection{
+        flex-direction: column;
+    }
+
+    .about-section{
+        height: 100%;
+    }
+
+    .contact-section{
+        height: 100%;
+    }
+  }
+
+
+  @media (max-width: 390px) {
+    .header{
+        width: 100%;
+    }
+
+    .hero-section{
+        /* padding: 0.5rem; */
+        /* margin-top: -10rem; */
+        height: 100%;
+    }
+
+    .hero-section .hero-img img{
+        width: 100%;
+    }
+
+    .our-menu-section{
+        /* margin-top: 15rem; */
+        /* margin-bottom: 12rem; */
+        margin-top: -1.5rem;
+        height: 100%;
+    }
+
+    .about-section{
+        /* margin-top: 37rem; */
+        /* margin-bottom: -6rem; */
+        height: 100%;
+    }
+
+    .about-text{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-text{
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer ul{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+  }
+  
+  
