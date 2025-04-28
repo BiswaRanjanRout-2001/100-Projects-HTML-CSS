@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #b1cff6, #9fa9c8, #b8a7f9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.card {
+  background: linear-gradient(135deg, #c3d6fc, #c4cdfc, #c6b8fc);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff96;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.584);
+  transition: all ease 0.5s;
+}
+
+.card:hover{
+    box-shadow: 5px -15px 20px rgba(0, 0, 0, 0.584);
+    transform: translateY(-10%);
+
+}
+
+.card h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardd p {
+  text-align: center;
+}
+
+.button {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff69;
+  backdrop-filter: blur(8px);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;  /* Adjust the width on small screens */
+        max-width: 400px;  /* Optional: Set a smaller max-width for mobile */
+        padding: 0.9rem;
+    }
+}
