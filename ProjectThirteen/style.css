@@ -1,0 +1,78 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+  
+  .checkout-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .checkout-form label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .flex-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .flex-column {
+    flex: 1;
+  }
+  
+  .checkout-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .checkout-form button:hover {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+  }
+  
