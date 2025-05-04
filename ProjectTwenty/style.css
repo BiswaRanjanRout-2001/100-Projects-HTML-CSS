@@ -1,0 +1,87 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #1e3a8a, #111827);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .error-code {
+    font-size: 120px;
+    font-weight: bold;
+    animation: bounce 1.3s linear infinite;
+  }
+  
+  .message {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #cccccc;
+  }
+  
+  .home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: white;
+    color: #1e3a8a;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .home-link:hover {
+    background: #e0eaff;
+  }
+  
+  .footer-note {
+    position: absolute;
+    bottom: -20px;
+    left: -0.3rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    color: #bbbbbb;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
